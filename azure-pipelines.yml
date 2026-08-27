@@ -11,7 +11,7 @@ variables:
   serviceConnection: devopsassignment2 
   resourceGroupName: assignment2rg 
   webAppName: chetan-assignment2wa
-  slotName: assignment2wa-assignment2stg
+  slotName: assignment2stg
  
 stages: 
 - stage: Build 
