@@ -10,7 +10,7 @@ variables:
   buildConfiguration: Release 
   serviceConnection: devopsassignment2 
   resourceGroupName: assignment2rg 
-  webAppName: chetan-assignment2wa
+  webAppName: assignment2wa
   slotName: assignment2stg
  
 stages: 
