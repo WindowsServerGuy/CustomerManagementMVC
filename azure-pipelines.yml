@@ -4,7 +4,7 @@ trigger:
       - master   # Change to main if required 
  
 pool: 
-  vmImage: ubuntu-latest 
+  vmImage: Windows 
  
 variables: 
   buildConfiguration: Release 
