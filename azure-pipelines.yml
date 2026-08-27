@@ -9,9 +9,9 @@ pool:
 variables: 
   buildConfiguration: Release 
   serviceConnection: devopsassignment2 
-  resourceGroupName: assignment2rg
-  webAppName: assignment2wa
-  slotName: assignment2stg 
+  resourceGroupName: assignment2rg 
+  webAppName: chetan-assignment2wa
+  slotName: assignment2wa-assignment2stg
  
 stages: 
 - stage: Build 
@@ -80,7 +80,7 @@ stages:
             displayName: Deploy to staging-qa slot 
             inputs: 
               azureSubscription: '$(serviceConnection)' 
-              appType: webAppLinux   # Use webApp for Windows App Service 
+              appType: webApp
               appName: '$(webAppName)' 
               deployToSlotOrASE: true 
               resourceGroupName: '$(resourceGroupName)' 
