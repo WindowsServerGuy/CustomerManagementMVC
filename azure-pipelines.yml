@@ -88,6 +88,6 @@ stages:
 
               resourceGroupName: 'rgassignment2'
 
-              slotName: 'assignment2wa-assignment2stg'
+              slotName: 'assignment2wa-staging-qa'
 
               package: '$(Pipeline.Workspace)/drop/**/*.zip'
