@@ -68,26 +68,17 @@ stages:
 
     strategy:
       runOnce:
-
         deploy:
-
           steps:
-
           - download: current
             artifact: drop
 
           - task: AzureWebApp@1
-
             inputs:
-
               azureSubscription: 'devopsassignment2'
               appType: 'webApp'
               appName: 'assignment2wa'
-
               deployToSlotOrASE: true
-
               resourceGroupName: 'rgassignment2'
-
               slotName: 'staging-qa'
-
               package: '$(Pipeline.Workspace)/drop/**/*.zip'
